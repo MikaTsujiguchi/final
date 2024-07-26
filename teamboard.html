@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作戦画像アプリ</title>
+    <link rel="stylesheet" href="styles_teamboard.css">
+</head>
+<body>
+
+    <P>HTMLファイルは表示できたのですが、JSが反映されず、まだ方法が見つかりませんでした。。。</P>
+    <p>下の画像はdashboard.htmlがうまく埋め込まれたイメージです</p>
+
+    <img src="img/sample2.png" alt="">
+    <div class="sidebar">
+
+        <p>Team Board</p>
+
+        <div class="sidebar-item">
+            <img src="img/1.png" onclick="showImage('img/1.png')">
+            <div class="text">
+                <h4>作戦1</h4>
+                <p>2024-07-25 14:00</p>
+            </div>
+        </div>
+        <div class="sidebar-item">
+            <img src="img/2.png" onclick="showImage('img/2.png')">
+            <div class="text">
+                <h4>作戦2</h4>
+                <p>2024-07-25 15:00</p>
+            </div>
+        </div>
+        <div class="sidebar-item">
+            <img src="img/3.png" onclick="showImage('img/3.png')">
+            <div class="text">
+                <h4>作戦3</h4>
+                <p>2024-07-25 16:00</p>
+            </div>
+        </div>
+        <div class="sidebar-item">
+            <img src="img/1.png" onclick="showImage('img/1.png')">
+            <div class="text">
+                <h4>作戦4</h4>
+                <p>2024-07-25 17:00</p>
+            </div>
+        </div>
+        <div class="sidebar-item">
+            <img src="img/2.png" onclick="showImage('img/2.png')">
+            <div class="text">
+                <h4>作戦5</h4>
+                <p>2024-07-25 18:00</p>
+            </div>
+        </div>
+        <div class="sidebar-item">
+            <img src="img/3.png" onclick="showImage('img/3.png')">
+            <div class="text">
+                <h4>作戦6</h4>
+                <p>2024-07-25 19:00</p>
+            </div>
+        </div>
+        <div class="sidebar-item">
+            <img src="img/1.png" onclick="showImage('img/1.png')">
+            <div class="text">
+                <h4>作戦7</h4>
+                <p>2024-07-25 20:00</p>
+            </div>  
+        </div>
+        <div class="sidebar-item">
+            <img src="img/3.png" onclick="showImage('img/3.png')">
+            <div class="text">
+                <h4>作戦7</h4>
+                <p>2024-07-25 20:00</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="content">
+        <img id="displayImage" src="https://via.placeholder.com/600?text=作戦画像" alt="選択された作戦画像">
+    </div>
+
+    <script>
+        function showImage(imageSrc) {
+            document.getElementById('displayImage').src = imageSrc;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

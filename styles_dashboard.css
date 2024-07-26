@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.chart-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 2200px; /* 最大幅を調整 */
+
+    margin-top: 30px;
+}
+
+.line-charts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 40%; /* 折れ線グラフが占める幅を調整 */
+    height: 1050px; /* 3つ分の高さ */
+}
+
+.radar-charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    max-width: 60%; /* レーダーチャートが占める幅を調整 */
+    height: 700px; /* 2つ分の高さ */
+}
+
+/* 折れ線グラフのサイズ設定 */
+#lineChart, #fatPercentageChart, #muscleMassChart {
+    width: 100%;
+    height: 350px; /* 各折れ線グラフの高さ */
+}
+
+/* レーダーチャートの表示エリアを正方形に設定 */
+#chart1, #chart2, #chart3, #chart4 {
+    width: calc(50% - 20px); /* 横幅を調整、gap分を引く */
+    height: calc(50% - 20px); /* 高さも横幅に合わせて正方形にする */
+}
+
+

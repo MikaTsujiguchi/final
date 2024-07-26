@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    height: 100vh;
+    
+    
+    background-image: url("img/homescreen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0; /* 初期状態で透明に設定 */
+    animation: fadeInBackground 2s ease-in-out forwards; /* フェードインアニメーションを適用 */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0; /* 初期状態の透明度 */
+    }
+    to {
+        opacity: 1; /* 最終状態の透明度 */
+    }
+}
+.container{
+    display: flex;
+    justify-content: center; /* コンテナの子要素を中央に配置 */
+    align-items: flex-start;
+    width: 90%; /* コンテナの幅を調整 */
+    max-width: 1200px; /* 最大幅を設定 */
+
+}
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* フォームの幅を広げる */
+    height: 500px;
+    margin-right: 5px;  /*フォームとスライドショーの間の距離を調整*/
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #717171;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px; /* ボタンの下に余白を追加 */
+}
+
+.login-form button:hover {
+    background-color: #4291cd;
+}
+
+.slideshow-container {
+    max-width: 800px; /* スライドショーの幅を設定 */
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

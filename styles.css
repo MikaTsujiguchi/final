@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff; /* 背景を白に設定 */
+}
+
+.container {
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative; /* 画像とボタンの相対位置を調整 */
+    display: inline-block;
+}
+
+.fade-in-image {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    width: 700px; /* 画像のサイズを大きく設定 */
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.fade-in-button:hover {
+    background-color: #989898; /* ホバー時の背景色を少し明るく */
+}
+
+.fade-in-button {
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 0.5s ease-in-out; /* ボタンの表示アニメーション */
+    padding: 25px 50px; /* ボタンを大きく */
+    font-size: 40px; /* フォントサイズを大きく */
+    cursor: pointer;
+    position: absolute; /* ボタンを画像の上に絶対配置 */
+    bottom: -60px; /* 画像の真下に配置（調整が必要な場合あり） */
+    left: 50%; /* 中央揃え */
+    transform: translateX(-50%) scale(0.8); /* 初期状態で少し縮小 */
+    border: none;
+    border-radius: 50px; /* ボタンを丸く */
+    background-color: #333; /* ダークグレーの背景色 */
+    color: #ffffff; /* 文字色を白に */
+    font-weight: bold;
+    text-transform: uppercase; /* 文字を大文字に */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
+}
+
+
+
+.fade-in-image.show {
+    opacity: 1;
+}
+
+.fade-in-button.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1); /* 表示時に元のサイズに戻す */
+}
+
+.logo {
+
+    margin-bottom: 50px;
+}
